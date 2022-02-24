@@ -1,5 +1,13 @@
 /* Add CSS styling here */
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /* border: 1px solid grey; */
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -53,4 +61,63 @@ button:hover {
 button a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 2%;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .row div {
+    width: 300px;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+  }
+
+  .topsection {
+    margin: 3% 5%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .row div {
+    width: 216px;
+    margin: 1% 1%;
+  }
+
+  .portfolio-element {
+  }
 }
